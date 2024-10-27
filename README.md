@@ -10,7 +10,7 @@
 
 [Tools Used](#tools-used)
 
-[QUERIES](#queries)
+[Queries](#queries)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
 
@@ -67,7 +67,7 @@ EDA involves exploring the data to answer some questions about the data such as;
   10. Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17).
 
 
-#### QUERIES (SYNTAX)
+#### Queries (SYNTAX)
 ----------------------
     1.                SELECT *
                FROM [dbo].[SALES]
@@ -141,7 +141,8 @@ In conclusion, this project effectively demonstrates the power of SQL in analyzi
 The project underscores how SQL serves as an essential tool for data-driven problem-solving and strategic decision-making, showcasing the potential of structured data analysis in addressing complex business business challenges.
 
 
-THIS PROJECT WAS ASSIGNED TO ME BY MR. FEMI AYODELE
+THIS PROJECT WAS ASSIGNED TO ME BY: 
+#### MR. FEMI AYODELE (LITA)
 
 
 
