@@ -10,7 +10,7 @@
 
 [Tools Used](#tools-used)
 
-[Queries](#queries)
+[QUERIES](#queries)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
 
