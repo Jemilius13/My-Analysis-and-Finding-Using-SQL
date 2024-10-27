@@ -10,8 +10,11 @@
 
 [Tools Used](#tools-used)
 
+[Queries](#queries)
+
 [Exploratory Data Analysis](#exploratory-data-analysis)
 
+[Conclusion](#conclusion)
 
 
 ### Project Overview: 
@@ -137,6 +140,8 @@ In conclusion, this project effectively demonstrates the power of SQL in analyzi
 
 The project underscores how SQL serves as an essential tool for data-driven problem-solving and strategic decision-making, showcasing the potential of structured data analysis in addressing complex business business challenges.
 
+
+THIS PROJECT WAS ASSIGNED TO ME BY MR. FEMI AYODELE
 
 
 
