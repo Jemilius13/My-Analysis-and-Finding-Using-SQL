@@ -67,53 +67,83 @@ EDA involves exploring the data to answer some questions about the data such as;
   10. Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17).
 
 
-#### Queries (SYNTAX)
+#### Queries 
 ----------------------
     1.                SELECT *
-               FROM [dbo].[SALES]
+               FROM [dbo].[Retail_Sales_Analysis]
                 WHERE sale_date = '2022-11-05';
 
+![analysis findingQ1](https://github.com/user-attachments/assets/700cf517-0846-4894-8223-dfb7ec8f9846)
+
+                
+
     2.         SELECT *
-               FROM SALES
+               FROM [dbo].[Retail_Sales_Analysis]
                WHERE category = 'Clothing'
                AND quantity> 10
                AND sale_date BETWEEN '2022-11-01' AND '2022-11-30';
 
+   ![analysis findingQ2](https://github.com/user-attachments/assets/07c5b077-3580-4e34-b45d-e1e5d826d076)
+
+
 
      3.         SELECT category, SUM(total_sale) AS total_sales
-                FROM SALES
+                FROM [dbo].[Retail_Sales_Analysis]
                 GROUP BY category;
+![analysis findingQ3](https://github.com/user-attachments/assets/b89a62ad-5787-4e06-b379-57eb04c62ec4)
+
+    
 
 
      4.         SELECT AVG(age) AS average_age
-                FROM SALES
+                FROM [dbo].[Retail_Sales_Analysis]
                 WHERE category = 'Beauty';
+   
+![analysis findingQ4](https://github.com/user-attachments/assets/3cc141be-2238-4c05-a9f0-31b92a374801)
+
+   
 
 
      5.         SELECT * 
-                FROM SALES 
+                FROM [dbo].[Retail_Sales_Analysis] 
                 WHERE total_sale > 1000;
+  ![analysis findingQ5](https://github.com/user-attachments/assets/97e33616-b181-4077-b6d9-043e6588f255)
+
+
+   
 
      6.         SELECT gender, category, COUNT(transactions_id) AS total_transactions
-                FROM SALES
+                FROM [dbo].[Retail_Sales_Analysis]
                 GROUP BY gender, category;   
+![analysis findingQ6](https://github.com/user-attachments/assets/010af58f-dc6a-43bb-ae9e-b09e9fb0a1cb)
+
+   
 
      7.         SELECT 
                 YEAR(sale_date) AS year, 
                 MONTH(sale_date) AS month, 
                 AVG(total_sale) AS average_sale
-                FROM SALES
+                FROM [dbo].[Retail_Sales_Analysis]
                 GROUP BY YEAR(sale_date), MONTH(sale_date)
                 ORDER BY average_sale DESC;
+                
+![analysis findingQ7](https://github.com/user-attachments/assets/73b4a978-ba51-4d01-a807-295e10fa9c8f)
+
+
 
 
      8.        SELECT TOP (5) [total_sale]
-               From SALES 
+               From [dbo].[Retail_Sales_Analysis]
+![analysis findingQ8](https://github.com/user-attachments/assets/0e475a28-53f1-4ebc-ba4c-468619f93aba)
+
+ 
 
 
      9.        SELECT category, COUNT(DISTINCT customer_id) AS unique_customers
-               FROM sales
+               FROM [dbo].[Retail_Sales_Analysis]
                GROUP BY category; 
+   ![analysis findingQ9](https://github.com/user-attachments/assets/d31cd6b3-422c-4a1e-abd9-00a6b42f722a)
+
 
 
      10.        SELECT 
@@ -123,7 +153,7 @@ EDA involves exploring the data to answer some questions about the data such as;
                   ELSE 'Evening'
                 END AS Shift,
                 COUNT(*) AS Number_of_Orders
-                FROM SALES
+                FROM [dbo].[Retail_Sales_Analysis]
                 GROUP BY 
                 CASE 
                 WHEN DATEPART(HOUR, sale_time) < 12 THEN 'Morning'
@@ -132,6 +162,9 @@ EDA involves exploring the data to answer some questions about the data such as;
                     END
                ORDER BY 
                Shift;
+![analysis findingQ10](https://github.com/user-attachments/assets/517f661f-9568-4f7a-bc58-4c3d3315c767)
+
+      
 
 
 ### Conclusion
